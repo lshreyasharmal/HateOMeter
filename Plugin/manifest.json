@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Racism on Reddit",
+  "description": "This extension detects Hate seech/ Racism on Reddit.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "reddit.png",
+    "default_title": "Let's Detect Racism"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://localhost:8000/*",
+    "https://www.reddit.com/*"
+  ],
+    "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/*/comments/*"],
+      "js":["jquery-3.0.0.min.js" ,"change.js"]
+    }
+  ]
+}
