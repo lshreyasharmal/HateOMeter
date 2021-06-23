@@ -1,4 +1,4 @@
-# HateOMeter
+# Hate-O-Meter
 
 This is the course project for Privacy and Security on Online Social Media
 
